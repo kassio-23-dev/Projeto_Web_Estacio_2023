@@ -1,32 +1,41 @@
 body{
     font-family : Arial , Helvetica , sans-serif;
-    background-image:url('../imagens/imagem2.jpg');
+    background-image:url('../imagens/imagem1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:600px;
+    max-width:1200px;
+    min-width:280px;
 }
-div{
-    background-color:   rgba(0, 0, 0, 0.6);
+
+.dados{
+    background-color: rgba(12, 12, 12, 0.6);
     position:absolute;
-    top: 50% ;
+    margin-top: 50% ;
     left: 50% ;
     transform: translate(-50% , -50% );
-    padding: 60px ;
-    border-radius: 2px ;
-    color:#fff ; _
+    padding: 20px ;
+    border-radius: 5px ;
+    color:#fff ;
+    text-align: center;
 }
 input{
-    padding: 5px ;
+    padding: 3px;
     border:none;
     outline:none;
     font-size: 15px ;
-    width: 320px;
+    width: 340px;
 }
-button {
-    background-color: rgb(26, 13, 13);
+#envio{
+    background-color: rgb(70, 52, 52);
     border:none;
-    padding: 10px ;
-    width: 100% ;
-    border-radius: 10px ;
+    padding-top: 8px;
+    padding-bottom:15px;
     color: white;
-    font-size: 15px ;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
 }
 
 h1{
@@ -36,3 +45,762 @@ text-align: center;
 button:hover{
     background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
 }
+
+@media (min-width:280px){
+    body{ 
+        height:653px;
+    }  
+    .container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vw;
+    width:100%;
+    }
+       .dados{
+        position: absolute;
+        padding: 7px ;
+        border-radius: 5px ;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width:200px;
+        left: 50%;
+        top: 50%;
+        height:120px;
+        transform: translate(-50%, -100%);
+    }
+    body input{
+        padding: 7px;
+        border:none;
+        outline:none;
+        font-size: 10px ;
+        width: 100px;
+        height:15px;
+    }
+   body button{
+        border:none;
+        padding: 10px;
+        width: 50% ;
+        height: 10px;
+        border-radius: 5px ;
+        font-size: 12px;
+        text-align: center;
+    }   
+    
+    .enviar{
+        width: 200px;
+        height: 200px;
+        margin:auto;
+        text-align: center;
+        align-items: center;
+    } 
+
+  body h1{
+font-size:20px; }
+}  
+
+    @media (min-width:360px){
+        body{ 
+            height:740px;
+        } 
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 15px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 280px;
+                height:150px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 10px ;
+                width: 220px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:20px;
+        
+            }   
+}
+    @media (max-width:375px){
+        body{ 
+            height:667px;
+        }   
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 15px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 280px;
+                height:150px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 12px ;
+                width: 220px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:20px;
+        
+            }     
+    }
+    
+    @media (min-width:390px){
+        body{ 
+            height:844px;
+        }       
+    
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height:170px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 10px ;
+                width: 220px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:20px;
+        
+            }
+    
+    }
+
+    
+    @media (min-width:393px){
+        body{ 
+            height:851px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height:170px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 10px ;
+                width: 220px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:20px;
+        
+            }
+   
+   
+   
+   
+    }
+    
+    @media (min-width:412px){
+        body{ 
+            height:914px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height:170px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 13px ;
+                width: 240px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 15px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            }     
+          body h1{
+        font-size:26px;
+        
+            }
+
+    }
+    
+    @media (min-width:414px){
+        body{ 
+            height:900px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height:170px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 13px ;
+                width: 250px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 15px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:25 px;
+        
+            }
+    
+    }
+    
+    @media (min-width:540px){
+        body{ 
+            height:720px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height:170px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 10px ;
+                width: 220px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:20px;
+        
+            }
+    
+    
+    
+    }
+    
+    @media (min-width:768px){
+        body{ 
+            height:1024px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 450px;
+                height:180px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 15px ;
+                width: 350px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 21px;
+                text-align: center;
+                align-items: center;
+            }   
+
+        
+          body h1{
+        font-size:40px;
+        
+            }
+    }
+    
+    @media (min-width:820px){
+        body{ 
+            height:1180px;
+        }       
+    
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 480px;
+                height:220px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 15px ;
+                width: 400px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 13px;
+                width: 60% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 25px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:45px;
+        
+            }  
+    
+    }
+    
+    @media (min-width:912px){
+        body{ 
+            height:1368px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 550px;
+                height:250px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 13px;
+                border:none;
+                outline:none;
+                font-size:22px ;
+                width: 450px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 20px;
+                border-radius: 5px ;
+                font-size: 25px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 300px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            }     
+          body h1{
+        font-size:49px;
+        
+            } 
+    
+    
+    }
+    
+    @media (min-width:1024px){
+        body{ 
+            height:600px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height:170px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            body input{
+                padding: 10px;
+                border:none;
+                outline:none;
+                font-size: 10px ;
+                width: 250px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 12px;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }   
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            } 
+        
+          body h1{
+        font-size:27px;
+        
+            }
+    }
+
+    @media (min-width:1280px){
+        body{ 
+            height:600px;
+        }       
+        .container{
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            }
+            
+            .dados{
+                position: absolute;
+                padding: 25px ;
+                border-radius: 5px ;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 500px;
+                height:200px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-40%, -80%);
+            }
+            body input{
+                padding:15px;
+                border:none;
+                outline:none;
+                font-size: 14px ;
+                width: 380px;
+                height:15px;
+            }
+           body button{
+                border:none;
+                padding: 15px 15px  ;
+                width: 50% ;
+                height: 15px;
+                border-radius: 5px ;
+                font-size: 16px;
+                text-align: center;
+                align-items: center;
+            }   
+            
+            .enviar{
+                width: 200px;
+                height: 220px;
+                margin:auto;
+                align-items: center;
+            }
+        
+          body h1{
+        font-size:35px;
+        
+            }
+    }
+
