@@ -39,8 +39,22 @@ function LOGIN($email, $senha){
     mysqli_close($set_conection);
 }
 
-function CREATE(){
+function SING_UP($nome, $email, $endereco, $senha, $sexo, $data_de_nascimento, $telefone){
     $set_conection = GET_CONECTION();
+
+    $queries = array('INSERT INTO cadastro (nome_completo, email, endereco, senha, sexo, data_de_nascimento) VALUES (\''.$nome.'\', \''.$email.'\', \''.$endereco.'\', \''.$senha.'\', \''.$sexo.'\', \''.$data_de_nascimento.'\');',
+                     'SELECT id_cadastro FROM cadastro WHERE email = \'' . $email . '\' AND senha = \'' . $senha . '\';'
+                    );
+
+    $sql = array(mysqli_query($set_conection, $queries[0]));
+
+    $sql[1] = mysqli_query($set_conection, $queries[1]);
+
+    $row = $sql[1]->fetch_row();
+
+    $queries[] = 'INSERT INTO contato (id_cadastro, telefone) VALUES ('. $row[0] .', \''. $telefone .'\');';
+
+    $sql[2] = mysqli_query($set_conection, $queries[2]);
 
     mysqli_close($set_conection);
 }
