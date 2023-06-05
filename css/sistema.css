@@ -1,0 +1,234 @@
+body{
+    background-image:url('../imagens/imagem9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    width:100vw;
+    height:100%;
+    margin: 0;
+
+}
+.table-bg{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px 15px 0 0;
+}
+
+.box-search{
+    display: flex;
+    justify-content: center;
+    gap: .1%;
+
+    body nav{
+    text-align: center;
+    }
+
+    #update{
+    margin-right: 50px;
+     transform: translate(-50,-50);
+    }
+
+    h1{
+        text-align: center;
+        color:white;
+        font-size: 20px;
+    }
+
+    #update{
+    position: absolute;
+    top: 60px;
+
+    }
+
+    @media (min-width:280px){
+        .container{ 
+            height:653px;
+        }   
+        body h4{
+            font-size:40px;
+            margin-left: auto;
+            margin-right: auto;
+           
+           }
+        body h4{
+        font-size:20px ;
+        
+        }
+        
+        #cad{
+        width:150px;
+        height:40px;
+        font-size: 15px;
+        margin-top:10%;
+        padding-bottom:10px;
+        padding-top: 5px;
+        align-items:center;
+        }
+        
+        }
+        
+        @media (min-width:360px){
+            body{ 
+                height:740px;
+            }       
+        }
+        
+        @media (min-width:375px){
+            body{ 
+                height:680px;
+            }    
+            
+            body h4{
+             font-size:20px ;
+        
+            }
+        }
+        @media (min-width:390px){
+            body{ 
+                height:844px;
+            }       
+        }
+        
+        @media (min-width:393px){
+            body{ 
+                height:851px;
+            }       
+        }
+        
+        @media (min-width:412px){
+            body{ 
+                height:914px;
+            }       
+        
+            body h1{
+                font-size:45px ;
+               
+               }
+        body h4{
+         font-size:25px ;
+        
+        }
+        
+           #cad{
+            width:200px;
+            height:55px;
+            font-size: 22px;
+            margin-top:10%;
+           }
+        
+        }
+        
+        @media (min-width:414px){
+            body{ 
+                height:900px;
+            }       
+        }
+        
+        @media (min-width:540px){
+            body{ 
+                height:720px;
+            }       
+        }
+        
+        @media (min-width:768px){
+            body{ 
+                height:1024px;
+            }       
+        
+            body h1{
+                font-size:55px ;
+               
+               }
+        body h4{
+         font-size:30px ;
+        
+        }
+        
+           #cad{
+            width:200px;
+            height:60px;
+            font-size: 25px;
+           }
+        
+        
+        
+        }
+        
+        @media (min-width:820px){
+            body{ 
+                height:1180px;
+            }   
+             
+            body h1{
+                font-size:55px ;
+               
+               }
+        body h4{
+         font-size:30px ;
+        
+        }
+        
+           #cad{
+            width:200px;
+            height:60px;
+            font-size: 25px;
+            margin-top:10%;
+           }
+        
+           
+        
+            
+        }
+        
+        @media (min-width:912px){
+            body{ 
+                height:1368px;
+            }       
+            body h1{
+                font-size:55px ;
+               
+               }
+        body h4{
+         font-size:40px ;
+        
+        }
+        
+           #cad{
+            width:200px;
+            height:60px;
+            font-size: 28px;
+           }
+        }
+        
+        @media (min-width:1024px){
+            body{ 
+                height:600px;
+            }       
+        
+            body h1{
+                font-size:50px ;
+               
+               }
+        body h4{
+         font-size:25px ;
+        
+        }
+        
+           #cad{
+            width:140px;
+            height:40px;
+            font-size: 16px;
+            margin-top:0%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 10px ;
+            padding-top:3px ;
+           }
+        
+        }
+        
+        @media (min-width:1280px){
+            body{ 
+                height:600px;
+            }       
+        }
