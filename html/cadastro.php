@@ -4,64 +4,43 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cadastro_style.css">
-    <title> Cadastro de Clientes</title>
-<body>
-    <div class="box">
-        <form action="" method="post">
-            <fieldset>
-                <legend><b>Fórmulário de Clientes</b></legend>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/cadastro_style.css">
+        <title> Cadastro de Clientes</title>
+    </head>
+    <body>
+        <div class="container">
+            <legend><b>Fórmulário de Clientes</b></legend>
+            <form action="" method="post">   
+                
+                <input type="text" name="nome" id="nome" placeholder="NOME COMPLETO" required>
+
+                <input type="email" name="email" id="email" placeholder="EMAIL" required>
+
+                <input type="tel" name="telefone" id="telefone" placeholder="TELEFONE" required>
+                
+                <div id="SEXO">
+                    <label for="feminino">FEMININO</label>
+                    <input type="radio" id="feminino" name="genero" value="F" required>
+                    <label for="masculino">MASCULINO</label>
+                    <input type="radio" id="masculino" name="genero" value="M" required>
+                    <label for="outro">OUTRO</label>
+                    <input type="radio" id="outro" name="genero" value="O" required>
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
-                </div>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <br>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
-                <br><br>
-                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                <br><br>
+    
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereço" class="labelInput">Endereço</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="password" name="senha" id="Senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Senha</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="password" name="senha_confirm" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Confirme sua Senha</label>
-                </div>
-                <br><br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
-        </form>
-    </div>
-</body>
+
+                <input type="text" name="endereco" id="endereco" placeholder="ENDEREÇO" required>
+
+                <input type="password" name="senha" id="Senha" placeholder="SENHA" required>
+
+                <input type="password" name="senha_confirm" id="senha_confirm" placeholder="CONFIRMAÇÂO DE SENHA" required>
+    
+                <input type="submit" name="submit" id="submit" value="ENVIAR">
+            </form>
+        </div>
+    </body>
 </html>
