@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $email = '';
 $senha = '';
@@ -8,8 +9,12 @@ if (isset($_POST['envio'])){
     $senha = $_POST['senha'];
 
     require '../php/conexao.php';
-
-    $result =  LOGIN($email, $senha);
     
-    echo $result;
+    if (LOGIN($email, $senha)){
+        $_SESSION['email'] = $email;
+        header("Location: ../html/sistema.php");
+        exit;
+    }else{
+        print_r('<script>alert("Email e/ou senha Invalidos.")</script>');
+    }
 }

@@ -13,7 +13,9 @@ if(isset($_POST['submit'])){
 
         require_once '../php/conexao.php';
 
-        SING_UP($nome, $email, $endereco, $senha, $sexo, $dt_nasc, $telefone);
+        CREATE($nome, $email, $endereco, $senha, $sexo, $dt_nasc, $telefone);
+
+        header("Location: ../html/homepage.html");
         
     }else{
         echo '<script>alert("As senhas não conferem, tente novamente!")</script>';
