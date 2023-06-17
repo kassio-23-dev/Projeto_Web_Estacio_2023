@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+
+    font-size: 62.5%;
+}
+
+body{
+
+    background-size: auto;
+    background-image: url('../imagens/imagem1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dados{
+
+    color: white;
+
+    border: 3px solid white;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-radius: 30px;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5vh;
+    padding: 10px;
+}
+
+.dados h1{
+    font-size: 6rem;
+}
+
+.dados h3{
+    font-size: 2rem;
+}
+
+.botoes-container{
+
+    width: 20%;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.botao{
+    width: 40%;
+    height: 4vh;
+    cursor: pointer;
+
+    border: 3px double white;
+    border-radius: 5px;
+
+    background-color: #000000a9;
+}
+
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1024px){
+
+    html{
+        font-size: 30%;
+    }
+
+    .botao{
+        height: 4.8vh;
+        margin: 1.5%;
+    }
+
+    .botoes-container{
+        
+        width: 60%;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+
+    a{
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 900px){
+
+    html{
+        font-size: 30%;
+    }
+
+    .botoes-container{
+        
+        width: 60%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    a{
+        font-size: 3.5rem;
+    }
+
+    .botao{
+        width: 80% ;
+        height: 6vh;
+        margin: 1.5%;
+    }
+
+}

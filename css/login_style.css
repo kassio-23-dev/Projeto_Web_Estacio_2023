@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url('../imagens/imagem1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 30%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+label{
+    color: white;
+    font-size: 3.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 60%;
+}
+
+form input{
+
+    width: 100%;
+    height: 20%;
+
+    margin: 2.5%;
+}
+
+form button{
+    width: 50%;
+    height: 18%;
+
+    color: white;
+
+    background-color: rgb(90, 81, 70);
+
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+button a :visited{
+    color: inherit;
+}
+
+
+form span{
+    color: white;
+    font-size: 1.4rem;
+
+    margin-top: 2.5%;
+}
+
+@media (max-width: 1440px){
+
+    .container{
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 950px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 430px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    form button{
+        width: 80%;
+        height: 20%;
+    
+        color: white;
+    
+        background-color: rgb(90, 81, 70);
+    
+    }
+
+}
