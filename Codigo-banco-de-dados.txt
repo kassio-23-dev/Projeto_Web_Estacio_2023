@@ -1,0 +1,20 @@
+CREATE DATABASE projeto_web_19_06_23;
+
+USE projeto_web_19_06_23;
+
+CREATE TABLE cadastro (
+	id_cadastro INT NOT NULL AUTO_INCREMENT,
+    nome_completo VARCHAR(100) NOT NULL,
+    email VARCHAR(180) NOT NULL,
+    endereco VARCHAR(60) NOT NULL,
+	senha VARCHAR(15) NOT NULL,
+    sexo VARCHAR(10) NOT NULL,
+    data_de_nascimento VARCHAR(10) NOT NULL, 
+	PRIMARY KEY (id_cadastro)
+);
+
+CREATE TABLE contato (
+	id_cadastro INT NOT NULL,
+    telefone DOUBLE NOT NULL, 
+	FOREIGN KEY (id_cadastro) REFERENCES cadastro(id_cadastro)
+);
