@@ -32,9 +32,9 @@ function LOGIN($email, $senha){
         $script = false;
     }
 
-    return $script;
-
     mysqli_close($set_conection);
+
+    return $script;
 }
 
 function CREATE($nome, $email, $endereco, $senha, $sexo, $data_de_nascimento, $telefone){
@@ -66,23 +66,23 @@ function CREATE($nome, $email, $endereco, $senha, $sexo, $data_de_nascimento, $t
 function READ($email){
     $set_conection = GET_CONECTION();
 
-        $query1 = 'SELECT * FROM cadastro WHERE email = \'' . $email . '\';';
+    $query1 = 'SELECT * FROM cadastro WHERE email = \'' . $email . '\';';
 
-        $sql1 = mysqli_query($set_conection, $query1);
+    $sql1 = mysqli_query($set_conection, $query1);
 
-        $consulta = $sql1->fetch_assoc();
+    $consulta = $sql1->fetch_assoc();
 
-        $query2 = 'SELECT telefone FROM contato WHERE id_cadastro = \'' . $consulta['id_cadastro'] . '\';';
+    $query2 = 'SELECT telefone FROM contato WHERE id_cadastro = \'' . $consulta['id_cadastro'] . '\';';
 
-        $sql2 = mysqli_query($set_conection, $query2);
+    $sql2 = mysqli_query($set_conection, $query2);
 
-        $telefone = $sql2->fetch_assoc();
+    $telefone = $sql2->fetch_assoc();
 
-        $consulta['telefone'] = $telefone['telefone'];
-
-        return $consulta;
+    $consulta['telefone'] = $telefone['telefone'];
 
     mysqli_close($set_conection);
+
+    return $consulta;
 }
 
 function UPDATE($email, $tabela, $coluna, $valor){
